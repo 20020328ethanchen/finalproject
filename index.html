@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Javascript</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code|Ubuntu+Mono|VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">IQ 500</div>
+        <div class="subtitle">Are You An Intellectually Well-Rounded Person?</div>
+        <div class="test-area">
+
+            <!-- HTML Code Here -->
+           <div class="question">
+               <!--Introduction-->
+               <div class="intro-word"><h1 class="h1">Welcome to IQ 500</h1><br><br><p class="qp">Are you ready to find out how knowledgeable you are?<br><br>Check it!</p></div>
+               <br><br><br>
+               <button class="start" onclick="begin()">Start</button>
+
+                <!--Question 1-->
+                <div class="Q1 invisible">
+                    <h1 class="h1">Math (20 Points)</h1><br><p class="qp">Which number logically follows this series?<br>4   6   9   6   14   6 ......</p>
+                    <br><br>
+                    <button class="Q1-Button" onclick="wrongQ1()">15</button>
+                    <button class="Q1-Button" onclick="wrongQ1()">18</button>
+                    <br>
+                    <button class="Q1-Button" onclick="pointQ1(20)">19</button>
+                    <button class="Q1-Button" onclick="wrongQ1()">21</button>
+                </div>
+               
+            
+                <!--Question 2-->
+                <div class="Q2 invisible">
+                    <h1 class="h1">Pop Culture (20 Points)</h1><br><p class="qp">Which music video on YouTube has the most views?</p>
+                    <br><br>
+                    <button class="Q2-Button" onclick="pointQ2(20)">Despacito</button>
+                    <button class="Q2-Button" onclick="wrongQ2()">Gangnam Style</button>
+                    <br>
+                    <button class="Q2-Button" onclick="wrongQ2()">Xiao Xing Yun</button>
+                    <button class="Q2-Button" onclick="wrongQ2()">Havana</button>
+                </div>
+        
+                
+                
+                <!--Question 3-->
+                <div class="Q3 invisible">
+                    <h1 class="h1">Astronomy (40 Points)</h1><br><p class="qp">What is the hottest planet in our solar system?</p>
+                    <br><br>
+                    <button class="Q3-Button" onclick="wrongQ3()">Mercury</button>
+                    <button class="Q3-Button" onclick="pointQ3(40)">Venus</button>
+                    <button class="Q3-Button" onclick="wrongQ3()">Mars</button>
+                    <button class="Q3-Button" onclick="wrongQ3()">Neptune</button>
+                </div>
+                
+                <!--Question 4-->
+                <div class="Q4 invisible">
+                    <h1 class="h1">Politics (10 Points)</h1><br><p class="qp">Who is the U.S. president who won the 2016 election?</p>
+                    <br><br>
+                    <button class="Q4-Button" onclick="pointQ4(10)">Donald Trump</button>
+                    <button class="Q4-Button" onclick="wrongQ4()">Hillary Clinton</button>
+                    <button class="Q4-Button" onclick="wrongQ4()">Bernie Sanders</button>
+                    <button class="Q4-Button" onclick="wrongQ4()">Barack Obama</button>
+                </div>
+            
+                <!--Question 5-->
+                <div class="Q5 invisible">
+                    <h1 class="h1">Geography (50 Points)</h1><br><p class="qp">What is the only U.S. state that only borders one state?</p>
+                    <br><br>
+                    <button class="Q5-Button" onclick="wrongQ5()">Florida</button>
+                    <button class="Q5-Button" onclick="wrongQ5()">Alaska</button>
+                    <button class="Q5-Button" onclick="wrongQ5()">Washington</button>
+                    <button class="Q5-Button" onclick="pointQ5(50)">Maine</button>
+                </div>
+                <!--Question 6-->
+                <div class="Q6 invisible">
+                    <h1 class="h1">Zoology (50 Points)</h1><br><p class="qp">Which of the following dog breeds is given the nickname of “barkless dog”?</p>
+                    <br><br>
+                    <button class="Q6-Button" onclick="wrongQ6()">Shiba Inu</button>
+                    <button class="Q6-Button" onclick="pointQ6(50)">Basenji</button>
+                    <button class="Q6-Button" onclick="wrongQ6()">German Shepherd</button>
+                    <button class="Q6-Button" onclick="wrongQ6()">Saint Bernard</button>
+                </div>
+                <!--Question 7-->
+                <div class="Q7 invisible">
+                    <h1 class="h1">Sports (20 Points)</h1><br><p class="qp">Can the libero in volleyball spike the ball?</p>
+                    <br><br>
+                    <button class="Q7-Button" onclick="wrongQ7()">Yes</button>            
+                    <button class="Q7-Button" onclick="pointQ7(20)">No</button>
+                    <button class="Q7-Button" onclick="wrongQ7()">Maybe</button>
+                    <button class="Q7-Button" onclick="wrongQ7()">So</button>
+                </div>
+                <!--Question 8-->
+                <div class="Q8 invisible">
+                    <h1 class="h1">History (30 Points)</h1><br><p class="qp">Which of the following countries is NOT in the Central Powers?</p>
+                    <br><br>
+                    <button class="Q8-Button" onclick="wrongQ8()">Germany</button>
+                    <button class="Q8-Button" onclick="wrongQ8()">Austria-Hungary</button>
+                    <button class="Q8-Button" onclick="pointQ8(30)">Japan</button>
+                    <button class="Q8-Button" onclick="wrongQ8()">Ottoman Empire</button>
+                </div>
+                <!--Question 9-->
+                <div class="Q9 invisible">
+                    <h1 class="h1">Art (40 Points)</h1><br><p class="qp">Who is the artist of Des glaneuses (The Gleaners)?</p>
+                    <br><br>
+                    <button class="Q9-Button" onclick="pointQ9(40)">Jean-François Millet</button>
+                    <button class="Q9-Button" onclick="wrongQ9()">Vincent Van Gogh</button>
+                    <button class="Q9-Button" onclick="wrongQ9()">Pablo Picasso</button>
+                    <button class="Q9-Button" onclick="wrongQ9()">Oscar-Claude Monet</button>
+                </div>
+                <!--Question 10-->
+                <div class="Q10 invisible">
+                    <h1 class="h1">Movie (20 Points)</h1><br><p class="qp">In Life of Pi, Richard Parker is a(n) __________ tiger.</p>
+                    <br><br>
+                    <button class="Q10-Button" onclick="wrongQ10()">Amur</button>
+                    <button class="Q10-Button" onclick="pointQ10(20)">Bengal</button>
+                    <button class="Q10-Button" onclick="wrongQ10()">Caspian</button>
+                    <button class="Q10-Button" onclick="wrongQ10()">Sumatran</button>
+                </div>
+                <!--Question 11-->
+                <div class="Q11 invisible">
+                    <h1 class="h1">International Community (50 Points)</h1><br><p class="qp">The official languages of Switzerland are:</p>
+                    <br><br>
+                    <button class="Q11-Button" onclick="wrongQ11()">Austrian, French, German, Italian</button>
+                    <button class="Q11-Button" onclick="wrongQ11()">English, French, German, Italian</button>
+                    <button class="Q11-Button" onclick="wrongQ11()">French, German, Czech, Dutch</button>
+                    <button class="Q11-Button" onclick="pointQ11(50)">French, Italian, German, Romansh</button>
+                </div>
+                <!--Question 12-->
+                <div class="Q12 invisible">
+                    <h1 class="h1">Health (40 Points)</h1><br><p class="qp">According to a study published in JAMA Internal Medicine, for older women, how many steps they should walk in order to be healthy?</p>
+                    <br><br>
+                    <button class="Q12-Button" onclick="wrongQ12()">5000</button>
+                    <button class="Q12-Button" onclick="pointQ12(40)">7500</button>
+                    <button class="Q12-Button" onclick="wrongQ12()">10000</button>
+                    <button class="Q12-Button" onclick="wrongQ12()">12500</button>
+                </div>
+                <!--Question 13-->
+                <div class="Q13 invisible">
+                    <h1 class="h1">Marine Biology (50 Points)</h1><br><img class="shrimp" src="images/mantisshrimp.jpg"><br><br><p class="qp">All of the following statements are correct about this mantis shrimp EXCEPT:</p>
+                    <br><br>
+                    <button class="Q13-Button" onclick="wrongQ13()">Its punch has the force over 1500 newtons</button>
+                    <button class="Q13-Button" onclick="pointQ13(50)">This creature is a spearer, not a smasher</button>
+                    <button class="Q13-Button" onclick="wrongQ13()">It can crack and punch holes in aquarium glass</button>
+                    <button class="Q13-Button" onclick="wrongQ13()">It can punch at same velocity as a gunshot from a .22 caliber rifle</button>
+                </div>
+                <!--Question 14-->
+                <div class="Q14 invisible">
+                    <h1 class="h1">Traditional Culture (40 Points)</h1><br><p class="qp">Which of the following hints the INCORRECT meaning of the food we eat during Chinese New Year?</p>
+                    <br><br>
+                    <button class="Q14-Button" onclick="wrongQ14()">Apple - Safe and Sound</button>
+                    <button class="Q14-Button" onclick="wrongQ14()">Orange - Auspicious and Good Luck</button>
+                    <button class="Q14-Button" onclick="wrongQ14()">Fat Choy - Fa Cai and Wealth</button>
+                    <button class="Q14-Button" onclick="pointQ14(40)">Dumpling - Dumb and Dump</button>
+                </div>
+                <!--Question 15-->
+                <div class="Q15 invisible">
+                    <h1 class="h1">Animal (20 Points)</h1><br><p class="qp">Which animal saves a lot of other animals from the wildfire in Australia indirectly with the underground tunnel it builds?</p>
+                    <br><br>
+                    <button class="Q15-Button" onclick="pointQ15(20)">Wombat</button>
+                    <button class="Q15-Button" onclick="wrongQ15()">Kangaroo</button>
+                    <button class="Q15-Button" onclick="wrongQ15()">Koala</button>
+                    <button class="Q15-Button" onclick="wrongQ15()">Wallaby</button>
+                </div>
+
+            </div>
+
+
+
+           </div>
+
+        
+            <!-- Javascript Here -->
+            <script src="index1.js"></script>
+
+        </div>
+    </div>
+
+</body>
+</html>
